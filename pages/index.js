@@ -5,24 +5,19 @@ import { useEffect, useState } from 'react'
 function Home() {
 
   const [storeData, setStoreData] = useState('')
-  const [isSearched, setIsSearched] = useState(false)
+  const [isFetched, setIsFetched] = useState(false)
 
-
-  //   const api = {
-  //     api_key: '20210526132754',
-  //     url: 'https://pixabay.com/api/'
-  //   }
   useEffect(() => {
     fetch('https://portifolio-bice-three.vercel.app/api/card')
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
-        // setStoreData(() => data)
+        setStoreData(() => data)
+        setIsFetched(() => true)
       })
-      // .catch((error) => console.log(error))
-  },[])
+      .catch((error) => console.log(error))
+  }, [])
 
-
+  console.log(storeData)
   return (
     <div>
       <Nav />
@@ -35,27 +30,31 @@ function Home() {
           <div className={styles.projectsContainer}>
             <h1>Projetos</h1>
             <div className={styles.projectsCardContainer}>
-              <button className={styles.projectsCard}>
-                <div className={styles.imageContainer}>
-                  <img src="uberlandia.jpg" alt="logo" />
-                </div>
-                <div className={styles.projectDescriptionContainer}>
-                  <div className={styles.projectNameContainer}>
-                    <h3>Nome</h3>
-                    <div className={styles.logoContainer}>
-                      <a href="https://github.com/vict3or"><img src="github-sign.png" /></a>
-                      <a href="https://www.linkedin.com/in/victor-ribeiro-oliveira/"><img src="link-symbol.png" /></a>
+              {isFetched && storeData.map(data => {
+                return (
+                  <button className={styles.projectsCard} key={data['id']}>
+                    <div className={styles.imageContainer}>
+                      <img src={data['image']} alt={data['alt']} />
                     </div>
-                  </div>
-                  <p>Description descriptiondfddfdfd iptiondescripti ondescription</p>
-                </div>
-              </button>
+                    <div className={styles.projectDescriptionContainer}>
+                      <div className={styles.projectNameContainer}>
+                        <h3>{data['name']}</h3>
+                        <div className={styles.logoContainer}>
+                          <a href={data['github']}><img src="github-sign.png" /></a>
+                          <a href={data['link']}><img src="link-symbol.png" /></a>
+                        </div>
+                      </div>
+                      <p>{data['description']}</p>
+                    </div>
+                  </button>
+                )
+              })}
             </div>
           </div>
         </div>
       </div>
       <Footer />
-    </div>
+    </div >
   )
 }
 

@@ -34,19 +34,16 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .projectsCard {
-  height: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 1.3rem .5rem 1.3rem .5rem;
-  border: solid #c5cfdc;
-  border-radius: .37rem;
-  border-width: 0.5px;
-  padding: 1.25rem;
+  margin: 1.3rem 0.5rem 1.3rem 0.5rem;
+  border-radius: 0.37rem;
+  background: #fff;
+  box-shadow: 1px 1px 6px -4px grey;
 }
 
 .projectDescriptionContainer button {
@@ -56,32 +53,37 @@
   width: 100%;
 }
 
+.imageContainer {
+  display: flex;
+}
+
 .imageContainer img {
-  width: 250px;
-  height: 140px;
-  border-radius: .22rem;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  border-radius: 0.22rem;
 }
 
 .projectDescriptionContainer {
   display: flex;
   flex-direction: column;
-  height: 150px;
   width: 100%;
+  padding:1.25rem;
 }
 
-.projectNameContainer{
+.projectNameContainer {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.projectNameContainer h3{
+.projectNameContainer h3 {
   font-size: 1.3rem;
+  margin: 0;
   line-height: 1.2;
   font-weight: 700;
   color: #262626;
 }
 
-.logoContainer{
+.logoContainer {
   height: 100%;
   margin-left: 10px;
   display: flex;
@@ -89,7 +91,7 @@
   align-items: center;
 }
 
-.logoContainer a{
+.logoContainer a {
   margin: 3px;
 }
 
@@ -99,8 +101,8 @@
 }
 
 .projectDescriptionContainer p {
-  margin-top: 0.2rem;
-  color:#6b6b6b;
+  margin: 0.5rem 0 0;
+  color: #6b6b6b;
   font-size: 1rem;
   text-align: left;
 }
@@ -133,5 +135,4 @@
     width: 345px;
     margin: 1.3rem 0 0 0;
   }
-
 }

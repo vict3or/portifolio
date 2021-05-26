@@ -8,7 +8,7 @@ function Home() {
   const [isFetched, setIsFetched] = useState(false)
 
   useEffect(() => {
-    fetch('https://portifolio-bice-three.vercel.app/api/card')
+    fetch('http://localhost:3000/api/card')
       .then((response) => response.json())
       .then((data) => {
         setStoreData(() => data)
@@ -31,7 +31,7 @@ function Home() {
             <div className={styles.projectsCardContainer}>
               {isFetched && storeData.map(data => {
                 return (
-                  <button className={styles.projectsCard} key={data['id']}>
+                  <div className={styles.projectsCard} key={data['id']}>
                     <div className={styles.imageContainer}>
                       <img src={data['image']} alt={data['alt']} />
                     </div>
@@ -45,7 +45,7 @@ function Home() {
                       </div>
                       <p>{data['description']}</p>
                     </div>
-                  </button>
+                  </div>
                 )
               })}
             </div>

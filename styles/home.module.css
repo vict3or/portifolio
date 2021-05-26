@@ -1,0 +1,135 @@
+.main {
+  min-height: calc(100% - (140px + 100px));
+}
+
+.homeWrapper {
+  max-width: 48rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.homeWrapper h1 {
+  font-size: 2.5rem;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #262626;
+  height: 20px;
+}
+
+.descriptionContainer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6b6b6b;
+  font-family: Arial;
+  letter-spacing: 2px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.projectsCard {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.3rem .5rem 1.3rem .5rem;
+  border: solid #c5cfdc;
+  border-radius: .37rem;
+  border-width: 0.5px;
+  padding: 1.25rem;
+}
+
+.projectDescriptionContainer button {
+  background: transparent;
+  padding: 0;
+  text-transform: none;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 240px;
+}
+
+.projectDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+}
+
+.projectNameContainer{
+  display: flex;
+  align-items: flex-start;
+}
+
+.projectNameContainer h3{
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #262626;
+}
+
+.logoContainer{
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer a{
+  margin: 3px;
+}
+
+.logoContainer img {
+  width: 20px;
+  height: 20px;
+}
+
+.projectDescriptionContainer p {
+  margin-top: 0.2rem;
+  color:#6b6b6b;
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (min-width: 801px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .homeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .descriptionContainer {
+    align-items: center;
+  }
+
+  .projectsCardContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projectsCard {
+    width: 345px;
+    margin: 1.3rem 0 0 0;
+  }
+
+}

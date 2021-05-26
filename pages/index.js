@@ -8,7 +8,7 @@ function Home() {
   const [isFetched, setIsFetched] = useState(false)
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/card')
+    fetch('https://portifolio-bice-three.vercel.app/api/card')
       .then((response) => response.json())
       .then((data) => {
         setStoreData(() => data)

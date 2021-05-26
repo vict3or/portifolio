@@ -53,6 +53,7 @@
   background: transparent;
   padding: 0;
   text-transform: none;
+  width: 100%;
 }
 
 .imageContainer img {

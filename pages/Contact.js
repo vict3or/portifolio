@@ -5,7 +5,7 @@ import style from '../styles/contact.module.css'
 export default function Contact() {
   return (
     <div>
-      <Nav />
+      <Nav contact="#eeeeee"/>
       <div className={style.contactWrapper}>
         <div className={style.contactContact}>
           <h2>Contato</h2>

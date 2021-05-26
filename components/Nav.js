@@ -1,19 +1,22 @@
-import styles from  '../styles/nav.module.css'
+import styles from '../styles/nav.module.css'
 import Link from 'next/link'
 
-export default function Nav() {
+export default function Nav(props) {
+
+
   return (
-    <div className={styles.navbar}>
-      <div className={styles.logo}>
-        <img src="/victor-logo-white.png" alt="logo"/>
-        <h1>Victor Oliveira</h1>
+    <div className={styles.navContainer}>
+      <div className={styles.navbar}>
+        <div className={styles.logo}>
+         <Link href="/"><img src="/victor-logo-white.png" alt="logo"/></Link> 
+          <h1>Victor Oliveira</h1>
+        </div>
+        <div className={styles.pages}>
+          <Link href="/" ><a style={{color: props.home}}>Home</a></Link>
+          <Link href="/about"><a style={{color: props.about}}>Sobre</a></Link>
+          <Link href="/Contact"><a style={{color: props.contact}}>Contato</a></Link>
+        </div>
       </div>
-      <div className={styles.pages}>
-        <Link href="/"><a >Home</a></Link>
-        <Link href="/about"><a >Sobre</a></Link>
-        <Link href="/Contact"><a >Contato</a></Link>
-      </div>
-     
     </div>
   )
 }

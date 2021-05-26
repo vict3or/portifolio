@@ -8,7 +8,7 @@ function Home() {
   const [isFetched, setIsFetched] = useState(false)
 
   useEffect(() => {
-    fetch('https://portifolio-bice-three.vercel.app/api/card')
+    fetch('http://localhost:3000/api/card')
       .then((response) => response.json())
       .then((data) => {
         setStoreData(() => data)
@@ -17,10 +17,9 @@ function Home() {
       .catch((error) => console.log(error))
   }, [])
 
-  console.log(storeData)
   return (
     <div>
-      <Nav />
+      <Nav home="#eeeeee"/>
       <div className={styles.main}>
         <div className={styles.homeWrapper}>
           <div className={styles.descriptionContainer}>

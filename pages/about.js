@@ -5,7 +5,7 @@ import styles from '../styles/about.module.css'
 export default function About() {
   return (
     <div>
-      <Nav />
+      <Nav about="#eeeeee"/>
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutMain}>
           <div className={styles.aboutLife}>
@@ -17,7 +17,7 @@ export default function About() {
           <div className={styles.aboutLife}>
             <h2>Música</h2>
             <p>Desde pequeno eu nutro um grande amor por música, sendo um autodidata no violão e compondo por hobbie desde os doze anos.</p>
-            <a href="https://open.spotify.com/artist/3FDiWJJ0w4K2P6XC0GJXvF?si=HZBy-1e1TmWxuIvXJmC9nw">Conheça minha página no spotfy</a>   
+            <a href="https://open.spotify.com/artist/3FDiWJJ0w4K2P6XC0GJXvF?si=HZBy-1e1TmWxuIvXJmC9nw">Conheça minha página no spotfy</a>
           </div>
           <div className={styles.aboutProgramming}>
             <h2>Programação</h2>
@@ -36,12 +36,12 @@ export default function About() {
             <h2>Linguagens e tecnologias</h2>
             <ul>
               <li>Javascript</li>
-              <li>CSS</li>
               <li>React</li>
-              <li>Html</li>
+              <li>CSS</li>
+              <li>HTML</li>
               <li>Python</li>
-              <li>git</li>
-              <li>Inglês avançado</li>
+              <li>git/github</li>
+              <li>Inglês fluente</li>
             </ul>
           </div>
         </div>

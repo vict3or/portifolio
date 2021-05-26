@@ -1,6 +1,6 @@
 function card(request, response) {
-  response.json(
-    [{
+  response.json([
+    {
       id: 1,
       name: 'react-hex-converter',
       link: 'https://hopeful-noether-d6c814.netlify.app/',
@@ -41,8 +41,8 @@ function card(request, response) {
       link: 'https://vict3or.github.io/livrorama/',
       github: 'https://github.com/vict3or/livrorama',
       image: 'https://images.prismic.io/victor-oliveira/e9402a31-2339-466c-ba21-77546cd89977_livrorama.png?auto=compress,format'
-    }]
-  )
+    }
+  ])
 }
 
 export default card

@@ -22,6 +22,9 @@
   transition: .3s;
 }
 
+.aboutMain a{
+  color: #0645AD;
+}
 .aboutMain a:hover {
   filter: brightness(150%);
 }

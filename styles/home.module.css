@@ -1,5 +1,5 @@
 .main {
-  min-height: calc(100% - (140px + 100px));
+  min-height: 75vh;
 }
 
 .homeWrapper {

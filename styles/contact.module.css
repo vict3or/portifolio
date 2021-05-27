@@ -1,7 +1,3 @@
-.contactWrapper {
-  /* height:60vh; */
-  min-height: calc(100% - (140px + 100px));
-}
 
 .contactContact {
   max-width: 48rem;

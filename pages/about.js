@@ -17,7 +17,7 @@ export default function About() {
           <div className={styles.aboutLife}>
             <h2>Música</h2>
             <p>Desde pequeno eu nutro um grande amor por música, sendo um autodidata no violão e compondo por hobbie desde os doze anos.</p>
-            <a href="https://open.spotify.com/artist/3FDiWJJ0w4K2P6XC0GJXvF?si=HZBy-1e1TmWxuIvXJmC9nw">Conheça minha página no spotfy</a>
+            <a href="https://open.spotify.com/artist/3FDiWJJ0w4K2P6XC0GJXvF?si=HZBy-1e1TmWxuIvXJmC9nw" target="_blank">Conheça minha página no spotfy</a>
           </div>
           <div className={styles.aboutProgramming}>
             <h2>Programação</h2>

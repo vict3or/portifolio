@@ -19,10 +19,22 @@
   width: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+
+.contact img {
+  width: 207px;
+}
+
+.contact img:hover {
+  cursor: pointer;
 }
 
 .footer a {
   color: white;
+}
+
+.footer svg {
+  margin: 9px 0 0 2px;
 }

@@ -1,5 +1,5 @@
 .contactWrapper {
-  height:60vh;
+  /* height:60vh; */
   min-height: calc(100% - (140px + 100px));
 }
 
@@ -16,11 +16,25 @@
   line-height: 1.33;
 }
 
+.contactWrapper h3 {
+  font-size: 1.7rem;
+}
+
 .contactContact p{
   color: #6b6b6b;
   font-size: 1.5rem;
 }
 
+.contactWrapper a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0645AD;
+  transition: .3s;
+}
+
+.contactWrapper a:hover {
+  filter: brightness(150%);
+}
 
 @media (min-width: 801px) {
   .contactWrapper {

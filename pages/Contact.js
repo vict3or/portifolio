@@ -17,6 +17,14 @@ export default function Contact() {
             <h3>Telefone</h3>
             <p>(34) 99986-5449</p>
           </div>
+          <div className={style.contactLinks}>
+            <h3>Github</h3>
+            <a href="https://github.com/vict3or/" target="_blank">https://github.com/vict3or/</a>
+          </div>
+          <div className={style.contactLinks}>
+            <h3>Linkedin</h3>
+            <a href="https://www.linkedin.com/in/victor-ribeiro-oliveira/" target="_blank">https://www.linkedin.com/in/victor-ribeiro-oliveira/</a>
+          </div>
         </div>
       </div>
       <Footer />

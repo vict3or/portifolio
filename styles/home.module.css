@@ -107,6 +107,7 @@
 }
 
 .projectDescriptionContainer p {
+  word-wrap: break-word;
   margin: 0.5rem 0 0;
   color: #6b6b6b;
   font-size: 1rem;

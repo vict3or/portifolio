@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Footer from '../components/footer'
 import Nav from '../components/Nav'
 
@@ -8,6 +10,10 @@ import { getProjects } from '../lib/api'
 function Home({ projects }) {
   return (
     <div>
+      <Head>
+        <title>Victor Oliveira</title>
+      </Head>
+
       <Nav home="#eeeeee" />
       <div className={styles.main}>
         <div className={styles.homeWrapper}>

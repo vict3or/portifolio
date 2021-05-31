@@ -9,7 +9,7 @@ import { getProjects } from '../lib/api'
 
 function Home({ projects }) {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Victor Oliveira</title>
       </Head>

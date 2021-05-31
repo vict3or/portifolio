@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .contactContact {
   max-width: 48rem;
@@ -10,6 +15,10 @@
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.33;
+}
+
+.contactWrapper {
+  margin-bottom: 5rem;
 }
 
 .contactWrapper h3 {

@@ -4,7 +4,7 @@ import styles from '../styles/about.module.css'
 
 export default function About() {
   return (
-    <div>
+    <div className={styles.container}>
       <Nav about="#eeeeee"/>
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutMain}>

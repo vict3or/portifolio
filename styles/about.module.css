@@ -1,4 +1,12 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
 .aboutWrapper {
+  margin-bottom: 5rem;
   min-height: calc(100% - (140px + 100px));
 }
 

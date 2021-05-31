@@ -1,9 +1,8 @@
-import styles from '../styles/nav.module.css'
 import Link from 'next/link'
 
+import styles from '../styles/nav.module.css'
+
 export default function Nav(props) {
-
-
   return (
     <div className={styles.navContainer}>
       <div className={styles.navbar}>
@@ -13,7 +12,7 @@ export default function Nav(props) {
         <div className={styles.pages}>
           <Link href="/" ><a style={{color: props.home}}>Home</a></Link>
           <Link href="/about"><a style={{color: props.about}}>Sobre</a></Link>
-          <Link href="/Contact"><a style={{color: props.contact}}>Contato</a></Link>
+          <Link href="/contact"><a style={{color: props.contact}}>Contato</a></Link>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ function card(request, response) {
       id: 2,
       name: 'react image search',
       alt: 'image search website image',
-      link: 'link: https://sherlockimg.netlify.app/',
+      link: 'https://sherlockimg.netlify.app/',
       description: 'Projeto de pesquisa de imagens.',
       github: 'https://github.com/vict3or/react-image-search',
       image: 'https://images.prismic.io/victor-oliveira/03662756-0d9a-4792-b351-22445011ddc0_imageSearcher.png?auto=compress,format'
@@ -31,7 +31,7 @@ function card(request, response) {
       id: 4,
       name: 'react blog',
       alt: 'blog website image',
-      link: 'link: https://optimistic-shannon-aedbac.netlify.app/',
+      link: 'https://optimistic-shannon-aedbac.netlify.app/',
       description: 'Projeto de blog com funcionalidade de adicionar e remover postagem.',
       github: 'https://github.com/vict3or/React-blog',
       image: 'https://images.prismic.io/victor-oliveira/f904b5f8-bb40-4eaf-9572-edc9c7680e0e_reactBlog.png?auto=compress,format'

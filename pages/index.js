@@ -39,8 +39,8 @@ function Home() {
                       <div className={styles.projectNameContainer}>
                         <h3>{data['name']}</h3>
                         <div className={styles.logoContainer}>
-                          <a href={data['github']}><img src="github-sign.png" /></a>
-                          <a href={data['link']}><img src="link-symbol.png" /></a>
+                          <a href={data['github']} target="_blank"><img src="github-sign.png" /></a>
+                          <a href={data['link']} target="_blank"><img src="link-symbol.png" /></a>
                         </div>
                       </div>
                       <p>{data['description']}</p>

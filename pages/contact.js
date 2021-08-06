@@ -1,5 +1,5 @@
-import Footer from '../../components/Footer/Footer'
-import Nav from '../../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
+import Nav from '../components/Nav/Nav'
 
 import {
   Container,
@@ -10,7 +10,7 @@ import {
   SubTitle,
   Paragraph,
   ContactLink
-} from './styles'
+} from '../styles/contactStyles'
 
 export default function Contact() {
   return (

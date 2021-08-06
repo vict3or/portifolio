@@ -25,7 +25,7 @@ import {
   CardLink,
   CardImage,
   ImageLink
-} from './styles'
+} from '../styles/homeStyle'
 
 function Home({ projects }) {
   return (

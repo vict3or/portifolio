@@ -1,5 +1,5 @@
-import Footer from '../../components/Footer/Footer'
-import Nav from '../../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
+import Nav from '../components/Nav/Nav'
 
 import {
   Container,
@@ -11,7 +11,7 @@ import {
   AboutLink,
   UnorderedList,
   ListItem
-} from './styles'
+} from '../styles/aboutStyles'
 
 export default function About () {
   return (

@@ -1,60 +1,82 @@
 import Head from 'next/head'
 
-import Footer from '../components/footer'
-import Nav from '../components/Nav'
-
-import styles from '../styles/home.module.css'
+import Footer from '../components/Footer/Footer'
+import Nav from '../components/Nav/Nav'
 
 import { getProjects } from '../lib/api'
 
+import {
+  Container,
+  Wrapper,
+  Main,
+  DescriptionBox,
+  ProjectsBox,
+  CardsBox,
+  Title,
+  Paragraph,
+  Card,
+  ImageContainer,
+  Image,
+  ProjectDescriptionBox,
+  ProjectParagraph,
+  NameBox,
+  CardTitle,
+  LogoBox,
+  CardLink,
+  CardImage,
+  ImageLink
+} from './styles'
+
 function Home({ projects }) {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Victor Oliveira</title>
       </Head>
 
       <Nav home="#eeeeee" />
-      <div className={styles.main}>
-        <div className={styles.homeWrapper}>
-          <div className={styles.descriptionContainer}>
-            <h1>Bem vindo!</h1>
-            <p>Sou um Front-End developer, amante dos quebra-cabeças e apaixonado em solucionar problemas.</p>
-          </div>
+      <Wrapper>
+        <Main>
+          <DescriptionBox>
+            <Title>Bem vindo!</Title>
+            <Paragraph>Sou um Front-End developer, amante dos quebra-cabeças e apaixonado em solucionar problemas.</Paragraph>
+          </DescriptionBox>
 
-          <div className={styles.projectsContainer}>
-            <h1>Projetos</h1>
+          <ProjectsBox>
+            <Title>Projetos</Title>
 
-            <div className={styles.projectsCardContainer}>
+            <CardsBox>
               {projects.map(project =>
-                <div className={styles.projectsCard} key={project.id}>
-                  <div className={styles.imageContainer}>
-                    <img src={project.image?.url} alt={project.image?.alt} />
-                  </div>
+                <Card key={project.id}>
+                  <ImageContainer>
+                    <ImageLink href={project.url} target="_blank">
+                      <Image src={project.image?.url} alt={project.image?.alt} />
+                    </ImageLink>
+                  </ImageContainer>
 
-                  <div className={styles.projectDescriptionContainer}>
-                    <div className={styles.projectNameContainer}>
-                      <h3>{project.name}</h3>
+                  <ProjectDescriptionBox>
+                    <NameBox>
+                      <CardTitle>{project.name}</CardTitle>
 
-                      <div className={styles.logoContainer}>
-                        <a href={project.repository} target="_blank">
-                          <img src="github-sign.png" />
-                        </a>
-                        <a href={project.url} target="_blank">
-                          <img src="link-symbol.png" />
-                        </a>
-                      </div>
-                    </div>
-                    <p>{project.description}</p>
-                  </div>
-                </div>
+                      <LogoBox>
+                        <CardLink href={project.repository} target="_blank">
+                          <CardImage src="github-sign.png" />
+                        </CardLink>
+                        <CardLink href={project.url} target="_blank">
+                          <CardImage src="link-symbol.png" />
+                        </CardLink>
+                      </LogoBox>
+                    </NameBox>
+                    <ProjectParagraph>{project.description}</ProjectParagraph>
+                  </ProjectDescriptionBox>
+                </Card>
               )}
-            </div>
-          </div>
-        </div>
-      </div>
+            </CardsBox>
+          </ProjectsBox>
+        </Main>
+      </Wrapper>
       <Footer />
-    </div >
+    </Container >
   )
 }
 

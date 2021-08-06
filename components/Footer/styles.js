@@ -1,4 +1,6 @@
-.footer {
+import styled from 'styled-components'
+
+export const FooterWrapper = styled.div`
   bottom: 0;
   color: #fff;
   height: 100px;
@@ -12,29 +14,29 @@
   padding: 20px;
   flex-shrink: 0;
   margin-top: auto;
-}
+`
 
-.contact {
+export const Container = styled.div`
+`
+
+export const Contact = styled.div`
   height: 80px;
   width: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
 
-.contact img {
+  svg {
+    margin: 9px 0 0 2px;
+  }
+`
+
+export const Image = styled.img`
   width: 207px;
-}
-
-.contact img:hover {
   cursor: pointer;
-}
+`
 
-.footer a {
+export const FooterLink = styled.a`
   color: white;
-}
-
-.footer svg {
-  margin: 9px 0 0 2px;
-}
+`
